@@ -1,0 +1,133 @@
+/*THIS IS THE COLOR PALLETTE IM USING #EAE7DC-LIGHT GRAY(page background),
+#D8C3A5-KHAKI(background), #8E8D8A-DARK GRAY(borders), #E98074-SAMON(accents),
+#E85A4F-REDISH PINK(links)*/
+
+
+
+/* create an ID for "blocks" background color*/
+.bgc{
+    background-color: #D8C3A5;
+    border: 2px solid #E98074;
+
+}
+/* create an ID for the border colors*/
+#bc{
+    border:2px solid #8E8D8A;
+    background-color: #D8C3A5;
+}
+
+/* create a link color ID */
+.lc{
+    color: #E85A4F;
+
+}
+
+/* create Labels color ID */
+.lbc{
+    color: #E98074;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20pt;
+}
+/* Square bullet points ID */
+.sbp{
+    list-style-type: square;
+}
+/* circular bullet points ID */
+.cbp{
+    list-style-type: circle;
+}
+
+#hist{
+    color: blue;
+
+}
+
+#center{
+    text-align: center;
+    color: #E98074;
+}
+
+form{
+    padding: 15px;
+    border:3px round #8E8D8A;
+
+}
+input[type=button], input[type="submit"]{
+  background-color: #E85A4F;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20pt;
+}
+input[type=text]{
+    color: white;
+    background-color: #8E8D8A;
+    font-style: italic;
+    font-size: 20pt;
+    border: 3px solid #D8C3A5;
+    border-radius: 4px;
+    font-weight: 900px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    background-color: #eae7dc;
+}
+
+
+h1{
+    text-decoration: underline;
+    color: #E85A4F;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+table,
+th,
+td{
+    border: 2px solid #E98074;
+    border-collapse: collapse;
+    background-color: #8E8D8A;
+}
+
+h3 {
+    text-align: center;
+    color: #E98074;
+    text-transform: capitalize;
+}
+
+nav{
+    text-align: center;
+    word-spacing: 10px;
+    border: 2px solid #E98074;
+    background-color: #D8C3A5;
+    font-size: 20pt;
+}
+
+p{
+    border: 2px solid #E98074;
+    padding: 30px;
+    background-color: #D8C3A5;
+}
+
+img{
+    border: 5px solid #8E8D8A;
+    padding: 30px;
+    background-color: #E85A4F;
+    width: 95%;
+}
+/* entering stories  css here */
