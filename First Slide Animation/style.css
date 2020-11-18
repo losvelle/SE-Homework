@@ -1,0 +1,14 @@
+.we {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: width 1s ease-in-out 0s;
+}
+
+.b {
+    background-color: blue;
+}
+
+.we:hover {
+    width: 25%;
+}
