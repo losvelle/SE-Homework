@@ -1,6 +1,6 @@
 // ============== FUNCTIONS
 
-=> theSum(x, y) {
+function theSum(x, y) {
     return x + y;
 };
 
