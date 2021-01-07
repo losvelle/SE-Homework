@@ -1,0 +1,160 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.board {
+    position: absolute;
+    top: 10px;
+    bottom: 25px;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.board .row {
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+
+.board .row .tile {
+    top: 0;
+    bottom: 0;
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 2.5vw;
+    font-family: impact;
+    color: #ddd;
+    background: -webkit-gradient(linear,
+            right bottom,
+            left top,
+            from(#000088),
+            to(#0000ff));
+    background: linear-gradient(to top left, #000088, #0000ff);
+    border: 3px solid #000;
+}
+
+.board .row .question-value {
+    display: block;
+}
+
+.board .row .question-answer {
+    display: none;
+}
+
+.board .row .question-question {
+    display: none;
+}
+
+.board .row .tile.active {
+    border-width: 0;
+    font-size: 10vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 5;
+}
+
+.board .row .tile.active .question-value {
+    display: none;
+}
+
+.board .row .tile.active .question-answer {
+    display: block;
+}
+
+.board .row .tile.active .question-answer {
+    display: block;
+}
+
+.team {
+    background-color: white;
+    z-index: 1;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: -10px;
+    height: 100vh;
+}
+
+body {
+    background-color: #0000ff;
+}
+
+.score {
+    font-size: 1em;
+    text-align: center;
+    margin: 2px;
+    background-color: #0000ff;
+    color: white;
+}
+
+hr {
+    border-bottom: solid #000;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+}
+
+.increment {
+    color: lightgreen;
+}
+
+.decrement {
+    color: red;
+}
+
+.answer {
+    opacity: 0;
+}
+
+/*When the class answer is hovered over it reveals the answere to the jeopardy question*/
+.answer:hover {
+    opacity: 1;
+}
+
+span {
+    font-size: 0.4em;
+    margin-top: -50px;
+    padding: 0;
+}
+
+/*Added grey to turn the already selected questions grey to keep track of questions answered*/
+.grey {
+    color: rgb(41, 48, 109);
+}
