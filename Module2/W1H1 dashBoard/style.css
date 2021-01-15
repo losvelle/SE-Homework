@@ -1,68 +1,84 @@
-:root {
-  --dark-cerulean: #124e78;
-  --maastricht-blue: #0b132b;
-  --yankees-blue: #1C2541;
-  --sea-serpent: #5bc0be;
-  --aquamarine: #6fffe9;
-  --react: #00d8ff;
+* {
+	box-sizing: border-box;
 }
 
-html {
-  background: var(--yankees-blue);
-}
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	background: linear-gradient(135deg, #756c8b, #393750);
+	color: white;
 }
 
-.container > div {
-  display: flex;
-  background: var(--yankees-blue);
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-height: 60vh;
-  align-items: flex-start;
-
+/* Get rid of pesky defaults */
+a {
+	text-decoration: none;
+	color: unset;
 }
 
-.board {
-  flex-basis: 60%;
-  display: grid;
-  grid-template-columns: 15vw 15vw 15vw;
-  grid-template-rows: 15vw 15vw 15vw;
-  color: white;
-  justify-items: stretch;
-  justify-content: center;
+ul {
+	list-style: none;
+	padding: unset;
 }
 
-.board  div {
-  display: flex;
-  align-items: center;
-  border: 3px solid var(--react);
+/*Main styling*/
+#App {
+	width: 90vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: auto;
+	grid-template-areas:
+	"sidebar reviews rating analysis"
+	"sidebar website website website"
+	"sidebar website website website";
+	column-gap: 2vw;
+	row-gap: 5vh;
+	padding: 4rem 0;
 }
 
-h4 {
-  text-align: center;
-  flex-basis: 100%;
-  align-self: center;
+.main-component {
+	background-color: #333d49;
+	padding: .6rem;
+	justify-self: stretch;
 }
 
-.X, .O {
-  flex-basis: 45%;
-  text-align: center;
+.sidebar {
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 125%;
+	margin: auto;
 }
 
-.X {
-  color: var(--sea-serpent);
+.sidebar li {
+	margin-bottom: 2rem;
 }
 
-.O {
-  color: var(--aquamarine);
+.reviews {
+	grid-area: reviews;
 }
-h1 {
-  flex-basis: 60%;
-  color: var(--react);
-  text-align: center;
 
+.avg-rating {
+	grid-area: rating;
+}
+
+.sentiment-analysis {
+	grid-area: analysis;
+}
+.sentiment-analysis ul{
+	text-align: center;
+}
+
+.website-visitors {
+	grid-area: website;
+}
+
+.graph {
+	position: relative;
+	top: 10%;
+}
+
+.graph img{
+	width: 65vw;
+	margin: auto;
 }
